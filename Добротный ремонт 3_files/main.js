@@ -40,6 +40,88 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.box').forEach(box => {
   observer.observe(box);
 });
+// 
+document.addEventListener('DOMContentLoaded', () => {
+  const leftArrow = document.querySelector('.slider-arrow-process.left');
+  const rightArrow = document.querySelector('.slider-arrow-process.right');
+  const slider = document.querySelector('.process__items');
+
+  // Функция для прокрутки влево
+  leftArrow.addEventListener('click', () => {
+    slider.scrollBy({
+      left: -slider.offsetWidth, // Прокрутка на ширину контейнера
+      behavior: 'smooth',
+    });
+  });
+
+  // Функция для прокрутки вправо
+  rightArrow.addEventListener('click', () => {
+    slider.scrollBy({
+      left: slider.offsetWidth, // Прокрутка на ширину контейнера
+      behavior: 'smooth',
+    });
+  });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+ 
+  const leftArrow = document.querySelector('.arrow-left-rooms-number');
+  const rightArrow = document.querySelector('.arrow-right-rooms-number');
+  const slider = document.querySelector('.columns');
+  // Функция для прокрутки влево
+  leftArrow.addEventListener('click', () => {
+    console.log("sa")
+    slider.scrollBy({
+      left: -slider.offsetWidth, // Прокрутка на ширину контейнера
+      behavior: 'smooth',
+    });
+  });
+
+  // Функция для прокрутки вправо
+  rightArrow.addEventListener('click', () => {
+    slider.scrollBy({
+      left: slider.offsetWidth, // Прокрутка на ширину контейнера
+      behavior: 'smooth',
+    });
+  });
+
+
+
+  
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+ 
+  const leftArrow = document.querySelector('.arrow-left-price-number');
+  const rightArrow = document.querySelector('.arrow-right-price-number');
+  const slider = document.querySelector('.columns-price');
+  // Функция для прокрутки влево
+  leftArrow.addEventListener('click', () => {
+    console.log("sa")
+    slider.scrollBy({
+      left: -slider.offsetWidth, // Прокрутка на ширину контейнера
+      behavior: 'smooth',
+    });
+  });
+
+  // Функция для прокрутки вправо
+  rightArrow.addEventListener('click', () => {
+    slider.scrollBy({
+      left: slider.offsetWidth, // Прокрутка на ширину контейнера
+      behavior: 'smooth',
+    });
+  });
+
+
+
+  
+});
+// 
+
 
 /* 
 Обновления для формы ремонта
