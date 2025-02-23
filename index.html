@@ -17,6 +17,7 @@
   <link href="./Добротный ремонт 3_files/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./Добротный ремонт 3_files/swiper-bundle.min.css">
   <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./Добротный ремонт 3_files/btn-style.css">
   <link rel="stylesheet" href="./Добротный ремонт 3_files/style.css">
@@ -2371,17 +2372,17 @@
           </div>
           <ul class="top-panel__nav">
             <li>
-              <a href="https://bekbolsoon.github.io/landing-remont/#portfolio" class="top-panel__nav-link">портфолио</a>
+              <a href="#portfolio" class="top-panel__nav-link">портфолио</a>
             </li>
             <li>
-              <a href="https://bekbolsoon.github.io/landing-remont/#calc" class="top-panel__nav-link">расчет
+              <a href="#calc" class="top-panel__nav-link">расчет
                 стоимости</a>
             </li>
             <li>
-              <a href="https://bekbolsoon.github.io/landing-remont/#feedback" class="top-panel__nav-link">Отзывы</a>
+              <a href="#reviews" class="top-panel__nav-link">Отзывы</a>
             </li>
             <li>
-              <a href="https://bekbolsoon.github.io/landing-remont/#about" class="top-panel__nav-link">о нас</a>
+              <a href="#contact" class="top-panel__nav-link">о нас</a>
             </li>
           </ul>
           <div class="top-panel__tels">
@@ -2402,7 +2403,7 @@
           </div>
           <div class="first-screen__add-text box visible">
             <!-- <span>Создаём прочное будущее, основанное на опыте.</span> -->
-            <a href="https://bekbolsoon.github.io/landing-remont/#portfolio" class="first-screen__arrow">
+            <a href="#portfolio" class="first-screen__arrow">
               <div class="first-screen__arrow-btn">
                 <i class="bx bx-down-arrow-alt"></i>
               </div>
@@ -2413,6 +2414,18 @@
     </div>
   </section>
 
+
+  <section class="video">
+    <div class="container">
+      
+      <video class="video__inner" controls>
+        <source src="https://www.youtube.com/watch?v=UBT10JiskI8&ab_channel=%D0%9F%D0%A0%D0%9E%D0%A1%D0%A2%D0%9E%D0%92%D0%A0%D0%95%D0%9C%D0%AF" type="video/mp4">
+
+     
+      </video>
+
+    </div>
+  </section>
   <section class="portfolio on-scroll" id="portfolio">
     <div class="container">
       <div class="portfolio__inner">
@@ -2421,11 +2434,7 @@
             Наши примеры работ – это живая иллюстрация профессионализма,
             смотрите сами!
           </h1>
-          <p class="section-text">
-            Ремонт без хлопот - Консультация, заказ и доставка материалов со
-            скидкой (для наших клиентов) Специалисты по всем необходимым видам
-            работ в одном месте
-          </p>
+  
         </div>
         <div class="portfolio__sliders">
           <div
@@ -2708,7 +2717,7 @@
                 <input class="contact__input" type="text" placeholder="Иван">
                 <input class="contact__input js-inputTel" type="tel" placeholder="+7 (___) ___-__-__">
                 <button class="btn-donate in__block">Заказать звонок</button>
-           
+
               </form>
 
               <button type="button" class="calc__btn-prev" data-prev="3">
@@ -2910,6 +2919,10 @@
           </div>
         </div>
       </div>
+      <div class="switcher-arrows">
+        <button class="arrow-left-rooms-number">&#10094;</button>
+        <button class="arrow-right-rooms-number">&#10095;</button>
+      </div>
     </div>
   </div>
 
@@ -3028,7 +3041,7 @@
 
         <div class="rooms-number with-switcher">
           <div class="container">
-            <div class="columns active columns--4">
+            <div class="columns columns-price  active columns--4">
               <div class="column">
                 <div class="title">
                   <span>Планировка</span>
@@ -3153,7 +3166,12 @@
                     СТОИМОСТЬ</a>
                 </div>
               </div>
+
             </div>
+          </div>
+          <div class="switcher-arrows">
+            <button class="arrow-left-price-number">&#10094;</button>
+            <button class="arrow-right-price-number">&#10095;</button>
           </div>
         </div>
       </div>
@@ -4808,6 +4826,7 @@
         <div class="process__text">
           <h1 class="section-title">Как мы работаем</h1>
         </div>
+
         <div class="process__items">
           <div class="process__item box">
             <div class="process__img">
@@ -4858,11 +4877,14 @@
             </div>
           </div>
         </div>
+        <button class="slider-arrow-process left">&#10094;</button>
+        <button class="slider-arrow-process right">&#10095;</button>
       </div>
+
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="contact__inner">
         <div class="contact__text box">
@@ -5000,6 +5022,7 @@
   <script src="./Добротный ремонт 3_files/main.js"></script>
   <script src="./Добротный ремонт 3_files/gallery.js.download"></script>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <div id="naptha_container0932014_0707" style="position: absolute; top: 0px; left: 0px;"></div>
 </body>
