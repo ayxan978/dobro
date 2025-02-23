@@ -117,8 +117,9 @@ a {
 *:after {
   box-sizing: border-box;
 }
+
 .header {
-    position: fixed;
+  position: fixed;
   top: 0;
   left: 50%;
   width: 108%;
@@ -143,17 +144,20 @@ a {
   justify-content: space-between;
   width: 100%;
 }
+
 @media (max-width: 992px) {
   .header {
     height: 60px;
     overflow: visible;
   }
 }
+
 /* Логотип и телефоны в одном ряду */
 .header__left {
   display: flex;
   align-items: center;
-  gap: 15px; /* Расстояние между логотипом и телефонами */
+  gap: 15px;
+  /* Расстояние между логотипом и телефонами */
 }
 
 /* Логотип */
@@ -204,7 +208,8 @@ a {
   }
 
   .header__logo img {
-    width: 100px; /* Уменьшаем логотип на мобилках */
+    width: 100px;
+    /* Уменьшаем логотип на мобилках */
   }
 
   .header__tel {
@@ -212,7 +217,8 @@ a {
   }
 
   .header__tels {
-    gap: 10px; /* Отступ между номерами */
+    gap: 10px;
+    /* Отступ между номерами */
   }
 
   .header__burger {
@@ -220,9 +226,11 @@ a {
   }
 
   .header__nav {
-    display: none; /* Прячем меню */
+    display: none;
+    /* Прячем меню */
   }
 }
+
 .header__inner.active {
   display: flex;
   position: absolute;
@@ -234,16 +242,20 @@ a {
   gap: 20px;
   padding-bottom: 30px;
 }
-.header__inner.active .header__nav{  width: 60%;
+
+.header__inner.active .header__nav {
+  width: 60%;
   display: flex;
   list-style-type: none;
-  flex-direction: column;  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 
   align-items: center;
-      padding: 0;
+  padding: 0;
 }
+
 .header__nav {
-display: none;
+  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -271,7 +283,20 @@ display: none;
   color: black;
 }
 
-
+.video {
+  background-color: rgb(247, 247, 247);
+  /* .portfolio__btn-prev, .portfolio__btn-next {
+    background: rgb(140, 140, 140);
+  } */
+}.video__inner {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 3;
+  flex-direction: column;
+}
 .first-screen {
   position: relative;
 }
@@ -343,7 +368,7 @@ display: none;
 .first-screen__main-text {
   flex-grow: 1;
   display: flex;
-  gap: 10px;
+  gap: 40px;
   flex-direction: column;
   justify-content: center;
   color: #fff;
@@ -599,6 +624,9 @@ display: none;
   .portfolio__text {
     width: 100%;
   }
+  .portfolio__slider{
+    margin-top: -30px !important;
+  }
 }
 
 .portfolio__sliders {
@@ -803,7 +831,8 @@ display: none;
     min-height: 200px;
     /* Увеличиваем высоту на мобильных */
   }
-  .info__block p{
+
+  .info__block p {
     font-size: 17px;
 
   }
@@ -969,10 +998,24 @@ display: none;
 }
 
 @media (max-width: 450px) {
+  .calc__step label {
+    color: rgb(0, 0, 0);
+    padding: 00px;
+    width: 100%;
+    color: rgb(36, 36, 36);
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .calc__step label img {
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
 
   .calc__btn-next,
   .calc__btn-prev {
-    width: calc(50% - 10px);
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -1686,6 +1729,58 @@ display: none;
   text-align: center;
 }
 
+.rooms-number .switcher-arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  transform: translateY(-50%);
+  padding: 0 0px;
+  z-index: 111;
+
+}
+
+.rooms-number .switcher-arrows button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+
+
+@media (max-width: 600px) {
+  .columns {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    /* Горизонтальный скролл */
+    scroll-snap-type: x mandatory;
+    /* Притягивание к элементам */
+    -webkit-overflow-scrolling: touch;
+    /* Плавный скролл на iOS */
+    gap: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between !important;
+  }
+
+  .column {
+    flex: 0 0 80%;
+    /* Каждый блок занимает 80% ширины экрана */
+    scroll-snap-align: center;
+    /* Притягивание блоков к центру */
+    width: auto;
+    /* Убираем фиксированную ширину */
+  }
+}
+
+
 .faq {
   background-color: rgb(255, 255, 255);
 }
@@ -1964,23 +2059,53 @@ display: none;
     font-size: 10px;
   }
 }
+
 @media (max-width: 600px) {
-  
+
   .process__items {
     display: flex !important;
-    overflow-x: auto; /* Горизонтальный скролл */
-    scroll-snap-type: x mandatory; /* Притягивание к элементам */
-    -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: 10px;
-    padding-bottom: 10px;        flex-direction: row;
+    padding-bottom: 10px;
+    flex-direction: row;
     flex-wrap: nowrap;
   }
 
   .process__item {
-    flex: 0 0 100%; /* Каждый блок занимает 80% ширины экрана */
-    scroll-snap-align: center; /* Притягивание блоков к центру */
-    width: auto; /* Убираем фиксированную ширину */
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    width: auto;
   }
+}
+
+/* Стрелки */
+.slider-arrow-process {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-arrow-process.left {
+  left: 10px;
+}
+
+.slider-arrow-process.right {
+  right: 10px;
+}
+
+
+/* Убираем полосы прокрутки */
+.info__inner::-webkit-scrollbar {
+  display: none;
 }
 
 .contact {
