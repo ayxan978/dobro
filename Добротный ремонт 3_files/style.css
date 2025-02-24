@@ -1977,9 +1977,6 @@ a {
   object-fit: contain;
 }
 
-@media (max-width: 769px) {
-  .team__img {}
-}
 
 .team__name {
   font-size: 23px;
