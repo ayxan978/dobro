@@ -1,3 +1,5 @@
+
+
 /* 
 Появление шапки
 */
@@ -356,3 +358,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+window.href="/"
