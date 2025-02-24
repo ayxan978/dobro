@@ -491,6 +491,12 @@ a {
   .first-screen__add-text span {
     font-size: 18px;
   }
+  .first-screen__inner {
+    height: 100vh;
+    display: flex;
+    margin-top: 30px; padding-top: 20px;
+    flex-direction: column;
+  }
 }
 
 .first-screen__arrow {
@@ -1177,7 +1183,7 @@ a {
   z-index: 2;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  background-color: rgba(77, 77, 77, 0.295);
+  background-color: rgba(161, 159, 159, 0.295);
 }
 
 .rooms-number {
@@ -1617,8 +1623,8 @@ a {
 @media (max-width: 576px) {
   .rooms-number .columns.columns--4 .column {
     flex-basis: 100%;
-    max-width: 100%;
-    margin: 0 0 35px;
+    max-width: 80%;
+    margin: 0 50px 35px;
   }
 }
 
@@ -1729,7 +1735,14 @@ a {
   text-align: center;
 }
 
+
 .rooms-number .switcher-arrows {
+  display: none;
+ 
+
+}
+
+@media (max-width: 600px) {.rooms-number .switcher-arrows {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -1753,9 +1766,6 @@ a {
   transition: background-color 0.3s;
 }
 
-
-
-@media (max-width: 600px) {
   .columns {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -2344,7 +2354,8 @@ a {
 
 .footer__tel-links {
   display: flex;
-  gap: 20px;
+  gap: 5px;
+  flex-direction: column;
 }
 
 .footer__tel-links a {
