@@ -353,7 +353,7 @@ a {
 .first-screen__header {
   height: 70px;
   border-radius: 70px;
-  background-color: rgba(112, 112, 112, 0.363);
+  background-color: rgba(255, 255, 255, 0.884);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 10px;
@@ -363,8 +363,11 @@ a {
   gap: 10px;
   position: relative;
   animation: animate__header 1.2s ease;
+  color: #000;
 }
-
+.first-screen__header li,.first-screen__header a{
+  color: #000;
+}
 @keyframes animate__header {
   0% {
     top: -100%;
@@ -395,7 +398,11 @@ a {
 
 .first-screen__main-text p {
   color: rgb(201, 201, 201);
-  font-size: 25px;
+  font-size: 45px;
+  margin-top: 40px;
+}
+.first-screen__main-text h1 {
+  margin-top: 40px;
 }
 
 @media (max-width: 992px) {
@@ -422,7 +429,14 @@ a {
 @media (max-width: 600px) {
   .first-screen__main-text h1 {
     font-size: 30px;
+  }.first-screen__main-text h1 {
+    margin-top: 0px;
+  }.first-screen__main-text p {
+    color: rgb(201, 201, 201);
+    font-size: 35px;
+    margin-top: 40px;
   }
+  
 }
 
 @media (max-width: 450px) {
@@ -434,7 +448,7 @@ a {
 .first-screen__main-text h5 {
   margin-top: 15px;
   color: rgb(163, 255, 110);
-  font-size: 20px;
+  font-size: 35px;
 }
 
 @media (max-width: 992px) {
@@ -640,7 +654,7 @@ a {
 }
 
 .portfolio__text {
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1010,7 +1024,7 @@ a {
 
 .calc__btn-next,
 .calc__btn-prev {
-  width: 200px;
+ 
   height: 40px;
   color: #000;
   font-weight: 500;
@@ -1018,7 +1032,8 @@ a {
   border-radius: 50px;
   background-color: #c5f5b5;
   border: 0;
-  cursor: pointer;
+  cursor: pointer;width: 100%;
+  margin-top: 15px;
 }
 
 .calc__btn-next:hover,
@@ -1214,7 +1229,7 @@ a {
   z-index: 2;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  background-color: rgba(161, 159, 159, 0.295);
+  background-color: rgb(247, 247, 247);
 }
 
 .rooms-number {
