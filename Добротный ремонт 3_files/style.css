@@ -288,7 +288,9 @@ a {
   /* .portfolio__btn-prev, .portfolio__btn-next {
     background: rgb(140, 140, 140);
   } */
-}.video__inner {
+}
+
+.video__inner {
   width: 100%;
   padding: 40px 0;
   display: flex;
@@ -297,6 +299,7 @@ a {
   z-index: 3;
   flex-direction: column;
 }
+
 .first-screen {
   position: relative;
 }
@@ -491,10 +494,12 @@ a {
   .first-screen__add-text span {
     font-size: 18px;
   }
+
   .first-screen__inner {
     height: 100vh;
     display: flex;
-    margin-top: 30px; padding-top: 20px;
+    margin-top: 30px;
+    padding-top: 20px;
     flex-direction: column;
   }
 }
@@ -630,7 +635,8 @@ a {
   .portfolio__text {
     width: 100%;
   }
-  .portfolio__slider{
+
+  .portfolio__slider {
     margin-top: -30px !important;
   }
 }
@@ -1023,13 +1029,15 @@ a {
   .calc__btn-prev {
     width: 100%;
     margin-top: 10px;
-  }.calc__step label img {
+  }
+
+  .calc__step label img {
     width: 100%;
     height: 100px;
     border-radius: 5px;
     -o-object-fit: cover;
     object-fit: cover;
-}
+  }
 }
 
 .calc__tel-form {
@@ -1745,33 +1753,34 @@ a {
 
 .rooms-number .switcher-arrows {
   display: none;
- 
+
 
 }
 
-@media (max-width: 600px) {.rooms-number .switcher-arrows {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  position: absolute;
-  top: 50%;
-  width: 90%;
-  transform: translateY(-50%);
-  padding: 0 0px;
-  z-index: 111;
+@media (max-width: 600px) {
+  .rooms-number .switcher-arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    transform: translateY(-50%);
+    padding: 0 0px;
+    z-index: 111;
 
-}
+  }
 
-.rooms-number .switcher-arrows button {
-  background-color: transparent;
-  color: black;
-  border: none;
-  font-size: 30px;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
+  .rooms-number .switcher-arrows button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
 
   .columns {
     display: flex !important;
@@ -2098,7 +2107,7 @@ a {
 }
 
 .slider-arrow-process {
-display: none;
+  display: none;
 }
 
 /* Убираем полосы прокрутки */
@@ -2127,6 +2136,7 @@ display: none;
   .contact__inner {
     gap: 20px;
   }
+
   /* Стрелки */
   .slider-arrow-process {
     position: absolute;
@@ -2135,17 +2145,18 @@ display: none;
     background-color: transparent;
     color: rgba(0, 0, 0, 0.5);
     border: none;
-    display: block;;
+    display: block;
+    ;
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
     z-index: 10;
   }
-  
+
   .slider-arrow-process.left {
     left: 10px;
   }
-  
+
   .slider-arrow-process.right {
     right: 10px;
   }
