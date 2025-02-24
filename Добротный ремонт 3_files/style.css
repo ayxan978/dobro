@@ -1978,9 +1978,7 @@ a {
 }
 
 @media (max-width: 769px) {
-  .team__img {
-    
-  }
+  .team__img {}
 }
 
 .team__name {
