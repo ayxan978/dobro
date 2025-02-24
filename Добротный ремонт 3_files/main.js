@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
- 
+
   const leftArrow = document.querySelector('.arrow-left-rooms-number');
   const rightArrow = document.querySelector('.arrow-right-rooms-number');
   const slider = document.querySelector('.columns');
@@ -90,12 +90,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  
+
 });
 
 
 document.addEventListener("DOMContentLoaded", function () {
- 
+
   const leftArrow = document.querySelector('.arrow-left-price-number');
   const rightArrow = document.querySelector('.arrow-right-price-number');
   const slider = document.querySelector('.columns-price');
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  
+
 });
 // 
 
@@ -181,27 +181,27 @@ document.addEventListener('DOMContentLoaded', function () {
     steps.forEach((step, index) => {
       step.style.display = index === stepIndex ? 'flex' : 'none';
     });
-    window.location.href = "#calc";
   }
 
-  function calculateRepairCost() {  
-    
+  function calculateRepairCost() {
+
 
     const totalCost = squareMeters * repairTypeCost;
     const repairCostValue = document.getElementById('repair-cost-value');
-      const repairCostValueP = document.getElementById('repair-cost-value-p');
-  if(totalCost == 0 || totalCost == ""){
-    repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта:<span id="repair-cost-value">Не бывает</span>`
+    const repairCostValueP = document.getElementById('repair-cost-value-p');
+    if (totalCost == 0 || totalCost == "") {
+      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта:<span id="repair-cost-value">Не бывает</span>`
 
-    }else{
-          repairCostValue.textContent = totalCost.toLocaleString(); // Разделители тысяч
+    } else {
+      repairCostValue.textContent = totalCost.toLocaleString(); // Разделители тысяч
 
     }
   }
 
-      let selectedPropertyType = "";
+  let selectedPropertyType = "";
   nextButtons.forEach(button => {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function () {    window.location.href = "#calc";
+
       const nextStep = parseInt(button.getAttribute('data-next'), 10) - 1;
       console.log(currentStep)
       if (currentStep === 0) {
@@ -210,14 +210,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (currentStep === 1) {
-      
+
         const areaRange = document.getElementById('areaRange');
         squareMeters = parseInt(areaRange.value, 10) || 0;
       }
 
       if (currentStep === 2) {
         const selectedRepairType = document.querySelector('input[name="repair_type"]:checked');
-        console.log(selectedPropertyType )
+        console.log(selectedPropertyType)
         if (selectedPropertyType == "new_building") {
           if (selectedRepairType) {
             console.log(selectedPropertyType + selectedRepairType)
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
               white_box: 0,
             }[selectedRepairType.value] || 0;
           }
-        }else if (selectedPropertyType == "secondary") {
+        } else if (selectedPropertyType == "secondary") {
           if (selectedRepairType) {
             repairTypeCost = {
 
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function () {
               white_box: 7000,
             }[selectedRepairType.value] || 0;
           }
-        }else if (selectedPropertyType == "white_box") {
+        } else if (selectedPropertyType == "white_box") {
           if (selectedRepairType) {
             repairTypeCost = {
 
@@ -355,4 +355,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-  
