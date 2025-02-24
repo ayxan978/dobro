@@ -1754,7 +1754,7 @@ a {
 
 @media (max-width: 991px) {
   .rooms-variants .grid .item.start-item {
-    grid-column: 2;
+    grid-column: span 2;
   }
 }
 
@@ -1975,6 +1975,12 @@ a {
   height: 300px;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+@media (max-width: 769px) {
+  .team__img {
+    height: 400px;
+  }
 }
 
 .team__name {
