@@ -200,7 +200,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let selectedPropertyType = "";
   nextButtons.forEach(button => {
-    button.addEventListener('click', function () {    window.location.href = "#calc";
+    button.addEventListener('click', function () {  
+      window.location.href = "#calc";
 
       const nextStep = parseInt(button.getAttribute('data-next'), 10) - 1;
       console.log(currentStep)
