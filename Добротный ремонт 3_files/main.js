@@ -181,9 +181,12 @@ document.addEventListener('DOMContentLoaded', function () {
     steps.forEach((step, index) => {
       step.style.display = index === stepIndex ? 'flex' : 'none';
     });
+    window.location.href = "#calc";
   }
 
-  function calculateRepairCost() {
+  function calculateRepairCost() {  
+    
+
     const totalCost = squareMeters * repairTypeCost;
     const repairCostValue = document.getElementById('repair-cost-value');
       const repairCostValueP = document.getElementById('repair-cost-value-p');
@@ -207,6 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (currentStep === 1) {
+      
         const areaRange = document.getElementById('areaRange');
         squareMeters = parseInt(areaRange.value, 10) || 0;
       }
