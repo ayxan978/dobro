@@ -243,19 +243,38 @@ a {
   padding-bottom: 30px;
 }
 
-.header__inner.active .header__nav {
+
+.header__inner .header__nav {
   width: 60%;
   display: flex;
   list-style-type: none;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 20px;
   justify-content: center;
 
   align-items: center;
   padding: 0;
 }
 
-.header__nav {
-  display: none;
+.header__nav {}
+
+@media (max-width: 600px) {
+  .header__inner.active .header__nav {
+    width: 60%;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    padding: 0;
+  }
+
+  .header__inner .header__nav {
+
+    display: none;
+
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1638,8 +1657,15 @@ a {
 @media (max-width: 576px) {
   .rooms-number .columns.columns--4 .column {
     flex-basis: 100%;
-    max-width: 80%;
-    margin: 0 50px 35px;
+    max-width: 95%;
+    margin: 0 50px -20px;
+    max-height: max-content;
+
+  }
+
+  .columns {
+    overflow-y: hidden;
+    max-height: max-content;
   }
 }
 
@@ -1953,7 +1979,7 @@ a {
 
 @media (max-width: 769px) {
   .team__img {
-    height: 400px;
+    
   }
 }
 
