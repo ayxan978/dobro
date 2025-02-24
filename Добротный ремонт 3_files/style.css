@@ -1659,7 +1659,14 @@ a {
     flex-basis: 100%;
     max-width: 80%;
     margin: 0 50px -20px;
-    max-height: max-content; 
+    max-height: max-content;
+  }
+
+  .columns-price .column {
+    flex-basis: 100%;
+    max-width: 95% !important;
+    margin: 0 50px -20px;
+    max-height: max-content;
   }
 
   .columns {
