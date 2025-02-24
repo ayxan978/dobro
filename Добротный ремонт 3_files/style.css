@@ -1657,7 +1657,7 @@ a {
 @media (max-width: 576px) {
   .rooms-number .columns.columns--4 .column {
     flex-basis: 100%;
-    max-width: 95%;
+    max-width: 80%;
     margin: 0 50px -20px;
     max-height: max-content;
 
