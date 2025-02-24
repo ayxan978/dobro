@@ -2097,28 +2097,9 @@ a {
   }
 }
 
-/* Стрелки */
 .slider-arrow-process {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.5);
-  border: none;
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
+display: none;
 }
-
-.slider-arrow-process.left {
-  left: 10px;
-}
-
-.slider-arrow-process.right {
-  right: 10px;
-}
-
 
 /* Убираем полосы прокрутки */
 .info__inner::-webkit-scrollbar {
@@ -2145,6 +2126,28 @@ a {
 @media (max-width: 600px) {
   .contact__inner {
     gap: 20px;
+  }
+  /* Стрелки */
+  .slider-arrow-process {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    display: block;;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slider-arrow-process.left {
+    left: 10px;
+  }
+  
+  .slider-arrow-process.right {
+    right: 10px;
   }
 }
 
