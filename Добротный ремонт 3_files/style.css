@@ -981,8 +981,9 @@ a {
 
 @media (max-width: 769px) {
   .calc__input-wrapper_row {
-    flex-direction: column;
+    flex-direction: row;
   }
+
 }
 
 .calc__btn-next,
@@ -1022,7 +1023,13 @@ a {
   .calc__btn-prev {
     width: 100%;
     margin-top: 10px;
-  }
+  }.calc__step label img {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
 }
 
 .calc__tel-form {
@@ -1742,8 +1749,7 @@ a {
 
 }
 
-@media (max-width: 600px) {
-  .rooms-number .switcher-arrows {
+@media (max-width: 600px) {.rooms-number .switcher-arrows {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
