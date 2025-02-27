@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const repairCostValue = document.getElementById('repair-cost-value');
     const repairCostValueP = document.getElementById('repair-cost-value-p');
     if (totalCost == 0 || totalCost == "") {
-      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта:<span id="repair-cost-value">Не бывает</span>`
+      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта:<span id="repair-cost-value"> </span>`
 
     } else {
       repairCostValue.textContent = totalCost.toLocaleString(); // Разделители тысяч
