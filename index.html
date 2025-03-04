@@ -2322,6 +2322,9 @@
       }
     }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -2414,7 +2417,9 @@
     </div>
   </section>
 
-
+  <div class="container-fluid">
+    <div class="hh"></div>
+  </div>
   <section class="video">
     <div class="container">
 
@@ -2438,7 +2443,12 @@
 
 
         </video>
+        <div class="container-fluid">
+          <div class="hh2">
+            <div class="hh2_1"></div>
 
+          </div>
+        </div>
         <div class="portfolio__sliders">
           <div
             class="swiper portfolio__slider js-teamSlider swiper-initialized swiper-horizontal swiper-backface-hidden">
@@ -2545,6 +2555,12 @@
             <div class="swiper-button-next team__btn-next portfolio__btn-next" tabindex="0" role="button"
               aria-label="Next slide" aria-controls="swiper-wrapper-2baf4bba8e5de5f7"></div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="hh2">
+            <div class="hh2_1"></div>
+
           </div>
         </div>
         <!-- <div class="portfolio__slider box">
@@ -2695,7 +2711,7 @@
                   <input type="radio" name="repair_type" value="capital">
                   Капитальный
                 </label>
-                <label>
+                <label id="white_box_kos">
                   <input type="radio" name="repair_type" value="white_box">
                   Косметический
                 </label>
@@ -2731,9 +2747,7 @@
             </div>
           </div>
         </div>
-        <div class="calc__img box">
-          <img src="./Добротный ремонт 3_files/calc-bg.jpg" alt="">
-        </div>
+
       </div>
     </div>
   </section>
@@ -4908,21 +4922,24 @@
         </div>
         <div class="contact__form box">
           <p class="contact__form-text">Свяжитесь с нами удобным способом</p>
-          <div class="footer__social-links contact__social-links">
-            <a href="https://vk.com/dobrotniy_rem_msk" class="footer__social-link" target="_blank">
-              <img src="./Добротный ремонт 3_files/vk.svg" alt="VK">
-            </a>
-            <a href="https://bekbolsoon.github.io/landing-remont/" class="footer__social-link" target="_blank">
-              <img src="./Добротный ремонт 3_files/telegram.png" alt="TG">
-            </a>
-            <a href="https://wa.me/79269108777" class="footer__social-link" target="_blank">
-              <img src="./Добротный ремонт 3_files/whatsapp.png" alt="WP">
-            </a>
+          <div class="contact__form-contacts">
+            <div class="footer__social-links contact__social-links">
+              <a href="https://vk.com/dobrotniy_rem_msk" class="footer__social-link" target="_blank">
+                <img src="./Добротный ремонт 3_files/vk.svg" alt="VK">
+              </a>
+              <a href="https://bekbolsoon.github.io/landing-remont/" class="footer__social-link" target="_blank">
+                <img src="./Добротный ремонт 3_files/telegram.png" alt="TG">
+              </a>
+              <a href="https://wa.me/79269108777" class="footer__social-link" target="_blank">
+                <img src="./Добротный ремонт 3_files/whatsapp.png" alt="WP">
+              </a>
+            </div>
+            <div class="header__tels contact__tels">
+              <a class="header__tel" href="tel:+79269108777">+7 926 910-87-77</a>
+              <a class="header__tel" href="tel:+74997111777">+7 499 711-17-77</a>
+            </div>
           </div>
-          <div class="header__tels contact__tels">
-            <a class="header__tel" href="tel:+79269108777">+7 926 910-87-77</a>
-            <a class="header__tel" href="tel:+74997111777">+7 499 711-17-77</a>
-          </div>
+
           <p class="contact__form-text">или закажите обратный звонок</p>
           <form action="" id="contactForm_contact" class="contactForm_contact">
             <input style="margin-top: 10px;" class="contact__input" name="name_contact" id="name_contact" type="text"
