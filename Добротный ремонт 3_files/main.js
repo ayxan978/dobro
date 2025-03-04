@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const repairCostValue = document.getElementById('repair-cost-value');
     const repairCostValueP = document.getElementById('repair-cost-value-p');
     if (totalCost == 0 || totalCost == "") {
-      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта:<span id="repair-cost-value"> </span>`
+      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта:<span id="repair-cost-value"></span>`
 
     } else {
       repairCostValue.textContent = totalCost.toLocaleString(); // Разделители тысяч
@@ -210,6 +210,11 @@ document.addEventListener('DOMContentLoaded', function () {
       if (currentStep === 0) {
         selectedPropertyType = document.querySelector('input[name="property_type"]:checked').value;
         console.log(selectedPropertyType)
+        if (selectedPropertyType == "new_building") {
+          document.getElementById("white_box_kos").className = "cantbe";
+        } else {
+          document.getElementById("white_box_kos").className = " ";
+        }
       }
 
       if (currentStep === 1) {
@@ -231,6 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
               capital: 20000,
               white_box: 0,
             }[selectedRepairType.value] || 0;
+
           }
         } else if (selectedPropertyType == "secondary") {
           if (selectedRepairType) {
@@ -359,4 +365,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-window.href="/"
+window.href = "/"
