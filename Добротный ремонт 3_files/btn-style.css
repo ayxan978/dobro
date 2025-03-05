@@ -92,6 +92,8 @@
 .contact__form-contacts {
   display: flex;
   flex-direction: row;
+  width: 60%;
+  align-self: center;
 }
 
 
@@ -122,10 +124,17 @@
   transform: scale(1.5);
 }
 
+@media (max-width: 992px) {
+  .calc__content {
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .contact__form-contacts {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   .calc__content {
@@ -148,4 +157,13 @@
   .calc__input-wrapper {
     gap: 20px !important;
   }
+}
+
+.anti {
+  width: 100%;
+  position: relative;
+  height: 30px;
+  background-color: #f9f9f9;
+  top: -30px;
+
 }
