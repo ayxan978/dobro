@@ -37,6 +37,10 @@
   color: rgb(66, 66, 66);
   font-size: 20px;
 
+  font-family: "Forum", serif;
+  font-weight: 500;
+  font-style: normal;
+
 }
 
 @media (max-width: 992px) {
@@ -191,6 +195,22 @@ a {
   height: 30px;
 }
 
+@media (max-width:660px) {
+  .header__burger {
+    display: flex;
+  }
+
+  .header__tel {
+
+    font-size: 15px;
+  }
+
+  .contact__inner .header__tel {
+
+    font-size: 20px;
+  }
+}
+
 /* Адаптив для мобильных */
 @media (max-width: 992px) {
   .header {
@@ -214,10 +234,7 @@ a {
     /* Уменьшаем логотип на мобилках */
   }
 
-  .header__tel {
 
-    font-size: 15px;
-  }
 
   .header__tels {
     margin-top: 0px;
@@ -225,9 +242,7 @@ a {
     /* Отступ между номерами */
   }
 
-  .header__burger {
-    display: flex;
-  }
+
 
   .header__nav {
     display: none;
@@ -284,11 +299,6 @@ a {
   }
 }
 
-@media (max-width: 992px) {
-  .header__nav {
-    flex-direction: column;
-  }
-}
 
 .header__nav li a {
   text-decoration: none;
@@ -297,6 +307,22 @@ a {
   transition: 0.3s ease;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__nav li a {
+    text-decoration: none;
+    color: rgb(140, 140, 140);
+    font-size: 15px;
+    transition: 0.3s ease;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
 }
 
 .header__nav li a:hover {
@@ -367,7 +393,7 @@ a {
   grid-template-rows: 100%;
   gap: 10px;
   position: relative;
-  animation: animate__header 1.2s ease;
+  animation: animate__header 1s ease-out forwards;
   color: #000;
 }
 
@@ -382,13 +408,13 @@ a {
 }
 
 @keyframes animate__header {
-  0% {
-    top: -100%;
+  from {
+    transform: translateY(-100px);
     opacity: 0;
   }
 
-  100% {
-    top: 0;
+  to {
+    transform: translateY(50px);
     opacity: 1;
   }
 }
@@ -408,6 +434,23 @@ a {
   justify-content: center;
   color: #fff;
   margin-top: 60px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .first-screen__main-text p {
@@ -421,6 +464,14 @@ a {
 }
 
 @media (max-width: 992px) {
+  .first-screen__main-text p {
+    font-size: 25px;
+  }
+
+
+}
+
+@media (max-width: 502px) {
   .first-screen__main-text p {
     font-size: 18px;
   }
@@ -437,7 +488,7 @@ a {
 
 @media (max-width: 992px) {
   .first-screen__main-text h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 
@@ -472,6 +523,12 @@ a {
 }
 
 @media (max-width: 992px) {
+  .first-screen__main-text h5 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
   .first-screen__main-text h5 {
     font-size: 16px;
   }
@@ -701,9 +758,7 @@ a {
 }
 
 @media (max-width: 992px) {
-  .portfolio__sliders {
-    flex-wrap: wrap;
-  }
+  .portfolio__sliders {}
 }
 
 .portfolio__slider {
@@ -1019,8 +1074,8 @@ a {
 
 @media (max-width: 769px) {
   .calc__step label img {
-    -o-object-fit: contain;
-    object-fit: contain;
+    -o-object-fit: fill;
+    object-fit: fill;
   }
 }
 
@@ -1047,6 +1102,20 @@ a {
 
 }
 
+.calc__tel-form .btn-donate {
+  border-radius: 50px !important;
+}
+
+.calc__btn-finish {
+  display: flex;
+  gap: 20px;
+}
+
+.calc__btns-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
 .calc__btn-next,
 .calc__btn-prev {
 
@@ -1061,6 +1130,26 @@ a {
   cursor: pointer;
   width: 100%;
   margin-top: 15px;
+}
+
+.calc__btn-next:hover,
+.calc__btn-prev:hover {
+  background-color: #e7daca;
+}
+
+.calc__btn-prev-finish {
+
+  height: 60px;
+  color: #000;
+  font-weight: 500;
+  font-family: var(--main-font);
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: #e7daca;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0;
 }
 
 .calc__btn-next:hover,
@@ -1086,7 +1175,7 @@ a {
   .calc__btn-next,
   .calc__btn-prev {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   .calc__step label img {
@@ -1828,7 +1917,7 @@ a {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 996px) {
   .rooms-number .switcher-arrows {
     display: flex;
     justify-content: space-between;
@@ -2029,6 +2118,15 @@ a {
   object-fit: fill;
 }
 
+@media (max-width: 996px) {
+  .portfolio__sliders .team__img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+}
+
 .team__name {
   font-size: 23px;
   font-weight: 600;
@@ -2070,7 +2168,7 @@ a {
 }
 
 .reviews {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   background-color: #f9f9f9;
 }
 
@@ -2195,6 +2293,7 @@ a {
   padding: 40px 0 60px 0;
   display: flex;
   gap: 50px;
+  justify-content: center;
 }
 
 @media (max-width: 769px) {
@@ -2252,7 +2351,7 @@ a {
 }
 
 .contact__form {
-  width: calc(40% - 25px);
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2263,6 +2362,12 @@ a {
 @media (max-width: 769px) {
   .contact__form {
     width: 60%;
+  }
+}
+
+@media (max-width: 996px) {
+  .contact__form {
+    width: 100%;
   }
 }
 
@@ -2423,6 +2528,9 @@ a {
 .footer__social-links {
   display: flex;
   gap: 20px;
+  flex-direction: row;
+  width: 100%;
+  align-self: center;
 }
 
 .footer__social-link {
@@ -2559,6 +2667,21 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+}
+
+
+.modal__content_icon {
+  display: flex;
+  width: 64%;
+  align-self: center;
+
+}
+
+@media (max-width: 609px) {
+  .modal__content_icon {
+    width: 100%;
+
+  }
 }
 
 .modal__content {
