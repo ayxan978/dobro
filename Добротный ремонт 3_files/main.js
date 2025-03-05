@@ -191,8 +191,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalCost = squareMeters * repairTypeCost;
     const repairCostValue = document.getElementById('repair-cost-value');
     const repairCostValueP = document.getElementById('repair-cost-value-p');
-    if (totalCost == 0 || totalCost == "") {
-      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта:<span id="repair-cost-value"></span>`
+    console.log(totalCost)
+    if (totalCost == 0 || totalCost == "" || totalCost == null) {
+      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта:<span id="repair-cost-value"> 1 500 000 руб.</span>`
 
     } else {
       repairCostValue.textContent = totalCost.toLocaleString(); // Разделители тысяч
