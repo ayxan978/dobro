@@ -1051,6 +1051,16 @@ a {
   font-weight: 200;
 }
 
+@media (max-width: 500px) {
+  .calc__step h2 {
+    text-align: center;
+  }
+
+  .calc__step p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 992px) {
   .calc__step h2 {
     font-size: 20px;
