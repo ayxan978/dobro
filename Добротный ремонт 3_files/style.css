@@ -768,7 +768,7 @@ a {
 @media (max-width: 750px) {
   .portfolio__sliders {
     flex-direction: column;
-    width:100%;
+    width: 100%;
   }
 }
 
@@ -2384,6 +2384,7 @@ a {
 
 .contact__inner .section-text {
   font-size: 22px;
+  text-align: center;
 }
 
 .contactForm_contact_1 .contact__form-text {
@@ -2409,7 +2410,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 70%;
+  width: 100%;
 }
 
 .contactForm_contact {
