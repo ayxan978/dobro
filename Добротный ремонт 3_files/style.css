@@ -2058,6 +2058,9 @@ a {
   display: none;
   color: rgb(82, 82, 82);
   min-height: 80px;
+  font-family: "Forum", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 @media (max-width: 769px) {
