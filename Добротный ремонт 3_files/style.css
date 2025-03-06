@@ -185,6 +185,14 @@ a {
   white-space: nowrap;
 }
 
+.header__inner .header__tel {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 /* Бургер-меню */
 .header__burger {
   display: none;
@@ -377,7 +385,7 @@ a {
 .first-screen__inner {
   height: 100vh;
   display: flex;
-  padding-top: 20px;
+  padding-top: 0px;
   flex-direction: column;
 }
 
@@ -483,7 +491,7 @@ a {
 }
 
 .first-screen__main-text h1 span {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 @media (max-width: 992px) {
@@ -542,7 +550,7 @@ a {
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
   .first-screen__btn {
     width: 100%;
     font-size: 18px;
@@ -1616,7 +1624,10 @@ a {
   max-height: 450px;
   height: 450px;
   scrollbar-color: #e7daca #f1f1f1;
+
 }
+
+
 
 .rooms-number .columns .column .list::-webkit-scrollbar {
   width: 4px;
@@ -1652,11 +1663,14 @@ a {
   transition: all 0.2s ease;
   padding: 20px 0;
   overflow: hidden;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 22px;
   border-bottom: 1.5px solid #c4c4c4;
   display: flex;
   justify-content: flex-start;
+  font-family: "Forum", serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
 }
 
 .rooms-number .columns .column .list .item:before {
@@ -1698,6 +1712,13 @@ a {
   padding: 0 26px;
   font-size: 18px;
   margin-bottom: 20px;
+
+}
+
+.rooms-number .columns .column .text b {
+
+  font-size: 16px;
+
 }
 
 .rooms-number .columns .column .price {
@@ -2118,7 +2139,7 @@ a {
   object-fit: fill;
 }
 
-@media (max-width: 996px) {
+@media (max-width: 1090px) {
   .portfolio__sliders .team__img {
     width: 100%;
     height: auto;
@@ -2294,6 +2315,7 @@ a {
   display: flex;
   gap: 50px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 769px) {
@@ -2333,8 +2355,8 @@ a {
 }
 
 .contact__text {
-  width: 60%;
-  width: calc(60% - 25px);
+  width: 100%;
+
 }
 
 @media (max-width: 769px) {
@@ -2350,18 +2372,67 @@ a {
 
 }
 
+.contact__text .section-title {
+  text-align: center;
+}
+
+.contact__inner .section-text {
+  font-size: 22px;
+}
+
+.contactForm_contact_1 .contact__form-text {
+  text-align: start !important;
+
+}
+
+.contactForm_contact_1 .contact__form-text span {
+  font-size: 25px;
+
+}
+
 .contact__form {
-  width: 60%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   gap: 20px;
   justify-content: center;
   align-content: flex-end;
+  flex-direction: row;
 }
 
-@media (max-width: 769px) {
+.contactForm_contact_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.contactForm_contact {
+  width: 100%;
+}
+
+@media (max-width: 1070px) {
   .contact__form {
-    width: 60%;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contactForm_contact_1 .contact__form-text span {
+    font-size: 25px;
+    display: none;
+  }
+
+  .contactForm_contact_1 .contact__form-text {
+    text-align: center !important;
+  }
+
+  .contact__form-contacts {
+
+    align-self: center;
+  }
+
+  .contact__inner .section-text {
+    font-size: 22px;
+    text-align: center !important;
   }
 }
 
