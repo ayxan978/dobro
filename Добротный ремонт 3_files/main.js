@@ -193,10 +193,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const repairCostValueP = document.getElementById('repair-cost-value-p');
     console.log(totalCost)
     if (totalCost == 0 || totalCost == "" || totalCost == null) {
-      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта составила <span id="repair-cost-value"> 1 500 000 руб.</span>`
+      repairCostValueP.innerHTML = `  Ориентировочная стоимость ремонта составила <span id="repair-cost-value"> 1 500 000 рублей</span>`
 
     } else {
-      repairCostValue.textContent = totalCost.toLocaleString(); // Разделители тысяч
+      repairCostValue.textContent = totalCost.toLocaleString('ru-RU') + " рублей";
 
     }
   }
