@@ -2387,7 +2387,7 @@ a {
 }
 
 .contactForm_contact_1 .contact__form-text {
-  text-align: start !important;
+  text-align: center !important;
 
 }
 
@@ -2401,7 +2401,7 @@ a {
   display: flex;
   gap: 20px;
   justify-content: center;
-  align-content: flex-end;
+  align-content: center;
   flex-direction: row;
 }
 
