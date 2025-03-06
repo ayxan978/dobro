@@ -93,11 +93,8 @@
   display: flex;
   flex-direction: row;
   width: 60%;
-  align-self: center;
+  gap: 40px;
 }
-
-
-
 
 .cantbe {
   display: none;
@@ -166,4 +163,8 @@
   background-color: #f9f9f9;
   top: -30px;
 
+}
+
+#repair-cost-value {
+  font-size: 25px;
 }
