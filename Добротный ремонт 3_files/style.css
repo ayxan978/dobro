@@ -2749,7 +2749,7 @@ a {
 
 .modal__content_icon {
   display: flex;
-  width: 64%;
+  width: 100%;
   align-self: center;
 
 }
