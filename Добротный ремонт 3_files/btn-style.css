@@ -92,7 +92,7 @@
 .contact__form-contacts {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 100%;
   gap: 40px;
 }
 
