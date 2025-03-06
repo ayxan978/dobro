@@ -765,8 +765,11 @@ a {
   gap: 40px;
 }
 
-@media (max-width: 992px) {
-  .portfolio__sliders {}
+@media (max-width: 750px) {
+  .portfolio__sliders {
+    flex-direction: column;
+    width:100%;
+  }
 }
 
 .portfolio__slider {
